@@ -12,6 +12,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# Qt
+find_package(Qt6 COMPONENTS Core)
+
 # Check for Jack (any OS)
 find_library(JACK_LIB jack)
 find_package(PkgConfig)
