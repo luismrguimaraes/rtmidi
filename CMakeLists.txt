@@ -217,7 +217,7 @@ target_link_libraries(rtmidi PUBLIC ${PUBLICLINKLIBS}
                              PRIVATE ${LINKLIBS})
 
 # Add tests if requested.
-option(RTMIDI_BUILD_TESTING "Build test programs" OFF)
+option(RTMIDI_BUILD_TESTING "Build test programs" ON)
 if (NOT DEFINED RTMIDI_BUILD_TESTING OR RTMIDI_BUILD_TESTING STREQUAL "")
   set(RTMIDI_BUILD_TESTING ${BUILD_TESTING})
 endif()
